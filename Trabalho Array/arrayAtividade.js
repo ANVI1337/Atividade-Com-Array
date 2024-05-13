@@ -20,11 +20,11 @@ function cadastrarFabricantes() {
 }
 cadastrarFabricantes();
 
-function verificarEstoque(estoque) {
+function verificarEstoque(estoqueArray) {
     let produtoPesquisado = prompt("Informe o nome do produto que deseja pesquisar:");
     let index = produtosArray.indexOf(produtoPesquisado);
     if (!produtosArray) {
-        let quantidadeEmEstoque = estoque[index];
+        let quantidadeEmEstoque = estoqueArray[index];
         alert(`Produto "${produtoPesquisado}" disponível. Quantidade em estoque: ${quantidadeEmEstoque}`);
     } else {
         alert("Produto indisponível.");
